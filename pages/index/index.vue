@@ -4,10 +4,9 @@
 			<swiper-item>
 				<div class="page">
 					<PageHeader :isshowlogo="true"  title="" scroll-with-animation="true"></PageHeader>
-					<div class="video-wrap">
-						<!-- 2018年的秋招视频，不要直接上传哦┏ (゜ω゜)=☞ -->
+<!-- 					<div class="video-wrap">
 						<video src="/static/video/publicity.mp4" controls></video>
-					</div>
+					</div> -->
 					<div class="content">
 						<div class="animated fadeInUp" style="animation-delay: 0s;">
 							<p>这是一个崭新的开始</p>
@@ -20,7 +19,7 @@
 							</br>
 						</div>
 						<div class="animated fadeInUp" style="animation-delay: 2s;">
-							<p>Dian团队秋招大戏即将开拍</p>
+							<p>18级种子班招新暨Dian团队春招即将开始</p>
 							<p>各位Huster们确定不上拉了解一下吗？</p>
 						</div>
 					</div>
@@ -31,22 +30,42 @@
 			</swiper-item>
 			<swiper-item>
 				<div class="page">
+					<introduce3></introduce3>
+				</div>
+			</swiper-item>
+			<swiper-item>
+				<div class="page">
 					<introduce1></introduce1>
 				</div>
 			</swiper-item>
-			<swiper-item>
+<!-- 			<swiper-item>
 				<div class="page">
 					<introduce2></introduce2>
 				</div>
-			</swiper-item>
+			</swiper-item> -->
 			<swiper-item>
 				<div class="page">
-					<teachers></teachers>
+					<introduce4></introduce4>
 				</div>
 			</swiper-item>
 			<swiper-item>
 				<div class="page">
-					<teamIndex :isReady="current==4"></teamIndex>
+					<introduce5></introduce5>
+				</div>
+			</swiper-item>
+<!-- 			<swiper-item>
+				<div class="page">
+					<teachers></teachers>
+				</div>
+			</swiper-item> -->
+			<swiper-item>
+				<div class="page">
+					<classIntroduce></classIntroduce>
+				</div>
+			</swiper-item>
+			<swiper-item>
+				<div class="page">
+					<teamIndex :isReady="current==6"></teamIndex>
 				</div>
 			</swiper-item>
 			<swiper-item>
@@ -68,9 +87,13 @@ import PageHeader from "@/components/PageHeader.vue"
 import DropUpArrow from "@/components/DropUpArrow.vue"
 import introduce1 from "./introduce/introduce1.vue"
 import introduce2 from "./introduce/introduce2.vue"
+import introduce3 from "./introduce/introduce3.vue"
+import introduce4 from "./introduce/introduce4.vue"
+import introduce5 from "./introduce/introduce5.vue"
 import teachers from "./introduce/teachers.vue"
 import teamIndex from "./teamIntroduce/teamIndex.vue"
 import introduce from "./teamIntroduce/introduce.vue"
+import classIntroduce from "./classIntroduce/introduce.vue"
 import someInfo from "./infomation/someInfo.vue"
 
 export default {
@@ -79,9 +102,13 @@ export default {
 		DropUpArrow,
 		introduce1,
 		introduce2,
+		introduce3,
+		introduce4,
+		introduce5,
 		teachers,
 		teamIndex,
 		introduce,
+		classIntroduce,
 		someInfo,
 	},
 	data() {
@@ -102,7 +129,7 @@ export default {
 			}
 		},
 		wheel(e){
-			if(e.deltaY>0 && this.current<7-1){
+			if(e.deltaY>0 && this.current<9-1){
 				this.current++;
 			} else if(e.deltaY < 0 && this.current>0){
 				this.current --;
@@ -137,7 +164,7 @@ export default {
 	/*margin-top: 12%;*/
     position: absolute;
     width: 100%;
-    top: 56%;
+    top: 40%;
 }
 .video-wrap {
 	display: flex;

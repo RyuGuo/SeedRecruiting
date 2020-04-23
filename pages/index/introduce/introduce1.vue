@@ -1,23 +1,11 @@
 <template>
 	<div>
-		<PageHeader :isshowlogo="false"  title="团队历史"></PageHeader>
+		<PageHeader :isshowlogo="false"  title="种子班介绍"></PageHeader>
 		<div class="text">
-		<TextContent 
-			:contentList="contentList"
-		></TextContent>
+			<TextContent 
+				:contentList="contentList"
+			></TextContent>
 		</div>
-<!-- 		<div class="text">
-			<p class="text-title">团队导师</p>
-			<scroll-view scroll-x class="teachers">
-				<image class="teachers" src="/static/image/teachers1.jpg"/>
-				<image class="teachers" src="/static/image/teachers2.jpg"/>
-				<image class="teachers" src="/static/image/teachers3.jpg"/>
-				<image class="teachers" src="/static/image/teachers4.jpg"/>
-			</scroll-view>
-			<p class="little-tip">
-				&lt;&lt; 右滑查看更多导师介绍 &gt;&gt;
-			</p>
-		</div> -->
 	</div>
 </template>
 
@@ -33,17 +21,13 @@ import TextContent from "@/components/TextContent.vue"
 		data() {
 			return {
 				contentList:[
-					'2002年3月，Dian团队由刘玉教授创建,并成为首批入驻启明学院的学生团队。通过“干中学”的培养模式，辅以真实项目的切身实践，培养学生的创新能力、实践精神和综合素质，是团队的初衷。',
-					'“历平凡事，成放心人”，是团队的口号。Dian团队经过17年的成长，在导师和历届队员的共同奋斗下，逐渐发展壮大，团队有28名顾问，均是各个行业的专家学者、领军人物。'
+					'“种子班”，全称基于项目的信息类专业教育实验班。2006年，分管本科教学的校领导建议设立“种子班”，把Dian团队的“干中学”模式纳入到体制内。种子班是依托电子信息与通信学院的电子信息工程专业进行专业培养，纳入启明学院实验班管理范。目前，种子班已招生14届，每届1个自然班30人，从大三开始独立建班。',
+					'种子班实行导师制、导生制和顾问制，导师为每名学生制定个性化的培养方案，实施科研项目牵引下的研究性和实践性教学。在本科阶段，种子班学生通常会进行2个真实科研项目的训练，从跟项目、做项目到管项目，以递进方式得到提升，为未来成为行业领军人才打牢基础。'
 				]
 			}
 		},
 		methods: {
-			// handleClick() {
-			// 	uni.reLaunch({
-			// 		url: "/pages/index/introduce/introduce2"
-			// 	})
-			// }
+			
 		}
 	}
 </script>
@@ -51,23 +35,6 @@ import TextContent from "@/components/TextContent.vue"
 <style lang="scss">
 @import "@/style/text.scss";
 @import "@/style/common.scss";
-// .little-tip {
-// 	color: $darkgray;
-// 	font-size: 10px;
-// 	text-align: center;
-// }
-// .teachers {
-// 	width: 311px;
-// 	height: 135px;
-// 	margin: 10px auto;
-// 	display: flex;
-// 	white-space: nowrap;
-// 	image {
-// 		width: 311px;
-// 		height: 135px;
-// 		display: inline-block;
-// 	}
-// }
 .text {
 	margin-top: 20px;
 }

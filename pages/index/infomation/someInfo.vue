@@ -8,13 +8,8 @@
 			</li>
 		</ul>
 		<div class="scan2D">
-			<!-- 现在还没有二维码呢(；′⌒`) -->
 			<img id="scan2D" :src="scan2DUrl" />
 			<p>扫描二维码，加入群聊</p>
-<!-- 			<p>群号：{{QQ}}</p>
-			<div class="copy" @click="copy">
-				<image src="/static/image/copy.png" mode=""></image>
-			</div> -->
 		</div>
 		<div class="Button-Group">
 			<a href="http://recruit.dian.org.cn/register/">
@@ -28,7 +23,6 @@
 			</div>
 			</a>
 		</div>
-		<!-- <div class="longButton"><p>现在报名</p></div> -->
 	</div>
 </template>
 
@@ -64,7 +58,7 @@ export default {
 		console.log(Wheight,Wwidth);
 		
 		let offsetH = -320;
-		let width = Math.min(Wheight+offsetH, 200);
+		let width = Math.min(Wheight+offsetH, 250);
 		console.log(width);
 		dom.style.width = width + 'px';
 		dom.style.height = width + 'px';
@@ -108,26 +102,7 @@ a{
 		text-align: center;
 		font-size: 12px;
 	}
-	// .copy {
-	// 	line-height: 0;
-	// 	position: absolute;
-	// 	left: 282px;
-	// 	top: 493px;
-	// 	img{
-	// 		width: 28px;
-	// 		height: 28px;
-	// 	}
-	// }
-	// .copy:active {
-	// 	background: rgba(0,0,0,0.3);
-	// }
 }
-// .longButton {
-// 	position: absolute;
-// 	left: 50%;
-// 	bottom: 10px;
-// 	transform: translate(-50%);
-// }
 .Button-Group {
 	position: absolute;
 	display: flex;

@@ -1,16 +1,12 @@
 <template>
-	<view>
-		<PageHeader :isshowlogo="false"  title="团队现状"></PageHeader>
+	<div>
+		<PageHeader :isshowlogo="false"  title="种子班介绍"></PageHeader>
 		<div class="text">
-		<TextContent
-			:contentList="contentList"
-		></TextContent>
+			<TextContent 
+				:contentList="contentList"
+			></TextContent>
 		</div>
-<!-- 		<div class="text">
-			<p class="text-title">照片</p>
-			<TextPicture :type="1" :imgList="['/static/image/pic1.jpg','/static/image/pic2.jpg','/static/image/pic3.jpg']"></TextPicture>
-		</div> -->
-	</view>
+	</div>
 </template>
 
 <script>
@@ -24,24 +20,20 @@ import TextContent from "@/components/TextContent.vue"
 		},
 		data() {
 			return {
-				contentList: [
-					"到今天，团队已培养正式队员665名，孵化出54家企业。历届队员不乏学界栋梁，Google、微软、BAT等著名互联网企业任职者，独角兽企业CEO等等，其中，老队员张良伦、金亦冶、柯尊尧、吴一明等荣登福布斯排行榜；而孵化出的五十多家企业里，估值过亿的达14家。",
-					"2019年初，团队成功开拓网络安全新方向，结合导师在网络方向深耕多年的技术积累，携手中科院信工所等资深安全研究机构，树起了网络安全方向的大旗。"
+				contentList:[
+					'种子班是Dian团队的“黄埔军校”，加入种子班的同学同时自动加入Dian团队，并且需要参与到Dian团队的项目实践与日常事务管理中来。参与团队与企业合作的项目是种子班同学的必修课，每学期有5到10个不等的工程训练的学分，在“跟项目”、“做项目”、“管项目”过程中，学生的技术能力和管理能力都得到很大提升。项目之余，种子班的同学们还要参与到团队日常的管理中来，例如接待外界的参观、举办一年一度的种子杯大赛等。对于种子班的同学来说，无论是项目经历，还是团队服务经历，对他们而言都是一个很好的历练。'
 				]
 			}
 		},
 		methods: {
-			// handleClick() {
-			// 	uni.reLaunch({
-			// 		url: "/pages/index/teamIntroduce/index"
-			// 	})
-			// }
+
 		}
 	}
 </script>
 
 <style lang="scss">
 @import "@/style/text.scss";
+@import "@/style/common.scss";
 .text {
 	margin-top: 20px;
 }

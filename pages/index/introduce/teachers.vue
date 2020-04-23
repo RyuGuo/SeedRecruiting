@@ -1,11 +1,7 @@
 <template>
 	<div style="height:100%">
 		<PageHeader :isshowlogo="false"  title="团队导师"></PageHeader>
-			<!-- <p class="text-title">团队导师</p> -->
 			<p class="info text">{{contentList[0]}}</p>
-<!-- 			<TextContent 
-				:contentList="contentList"
-			></TextContent> -->
 			<swiper 
 				class="swiper" 
 				:indicator-dots="true" 
@@ -20,16 +16,9 @@
 						<div class="card">
 							<TeacherCard :teacher="teacher"></TeacherCard>
 						</div>
-						<!-- <image lazy-load="true" :src="teacher.imgurl"></image> -->
 					</swiper-item>
 				</block>
 			</swiper>
-<!-- 			<scroll-view scroll-x class="teachers">
-				
-			</scroll-view> -->
-<!-- 			<p class="little-tip">
-				&lt;&lt; 右滑查看更多导师介绍 &gt;&gt;
-			</p> -->
 	</div>
 </template>
 

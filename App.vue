@@ -39,4 +39,12 @@ page {
 	background-size:100% 100%;
 	-moz-background-size:100% 100%;
 }
+
+.swiper {
+	height: calc(100% - 50px);
+	&-center {
+		display: flex;
+		align-items: center;
+	}
+}
 </style>

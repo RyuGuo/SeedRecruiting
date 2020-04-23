@@ -11,7 +11,7 @@
 			indicator-active-color="rgba(255,255,255,0.8)"
 		>
 			<block v-for="item in teamInfo" :key="item.name">
-				<swiper-item>
+				<swiper-item  class="swiper-center">
 					<div class="card">
 						<TeamCard :name="item.name" 
 							:imgUrl="item.imgUrl" 
@@ -112,8 +112,5 @@ import TeamCard from "@/components/TeamCard.vue"
 	display: flex;
 	justify-content: center;
 	width: 100%;
-}
-.swiper {
-	height: 88%;
 }
 </style>

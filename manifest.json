@@ -1,5 +1,5 @@
 {
-    "name" : "TeamRecruiting",
+    "name" : "SeedRecruiting",
     "appid" : "",
     "description" : "",
     "versionName" : "1.0.0",
@@ -62,7 +62,7 @@
         "usingComponents" : true
     },
     "h5" : {
-        "title" : "Dian团队招新",
+        "title" : "18级种子班招新",
         "router" : {
             "mode" : "history",
             "base" : "/static/h5/"
