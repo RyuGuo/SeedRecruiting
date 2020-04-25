@@ -4,9 +4,9 @@
 		<swiper 
 			class="swiper" 
 			:indicator-dots="true" 
-			:autoplay="false" 
+			:autoplay="true" 
 			:interval="8000" 
-			:duration="2000" 
+			:duration="1000" 
 			current="0" 
 			indicator-active-color="rgba(255,255,255,0.8)"
 		>
