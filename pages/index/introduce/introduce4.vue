@@ -6,11 +6,6 @@
 				:contentList="contentList"
 			></TextContent>
 		</div>
-		<div class="an">而种子班这个宇宙还依然在
-			<div class="starburst">
-				<span><span><span>膨胀</span></span></span>
-			</div>
-		</div>
 	</view>
 </template>
 
